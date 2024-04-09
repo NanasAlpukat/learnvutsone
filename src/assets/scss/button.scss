@@ -1,0 +1,58 @@
+
+// .t-btn{
+//     padding: 200px;
+//     color: #fff;
+//     border-radius: 20px;
+//     &-success{
+//         background-color: $color;
+//     }
+// }
+
+ // @layer base {
+    //     h1 {
+    //       @apply text-2xl;
+    //     }
+    //     h2 {
+    //       @apply text-xl;
+    //     }
+    //   }
+      
+    //   @layer components {
+    //     .btn-blue {
+    //       @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+    //     }
+    //   }
+      
+    //   @layer utilities {
+    //     .filter-none {
+    //       filter: none;
+    //     }
+    //     .filter-grayscale {
+    //       filter: grayscale(100%);
+    //     }
+    //   }
+    
+$color:#20b36e;
+@layer components{
+    .t-btn{
+        &-success{
+         background-color: $color;
+         color: white;
+         transition: font-size  1s ease-in;
+            transition: margin-left 0.5s ease-in;
+         &:hover{
+            font-size: 20px;
+            border-radius: 5px;
+            margin-left: 40px;
+            // transition: font-size  0.7s ease-in;
+            // transition: margin-left 0.5s ease-in;
+            transition: font-size  1s ease-out;
+            transition: margin-left 0.5s ease-out;
+            transition-delay: 0.3s;
+         }   
+        }
+
+        @apply px-[20px] py-3 hover:bg-[#45ec99]  rounded-[100%]
+    }
+   
+}
